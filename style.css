@@ -1,0 +1,100 @@
+/* Base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.resume-container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(184, 184, 184);
+  overflow: hidden;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 300px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.sidebar h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.job-title {
+  font-size: 20px;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.sidebar p {
+  font-size: 15px;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+/* Main content styling */
+.main-content {
+  padding: 50px;
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.section-content {
+  margin-top: 10px;
+  display: block;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+button:focus {
+  outline: none;
+}

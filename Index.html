@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="resume-container">
+        <!-- Sidebar with Profile Information -->
+        <aside class="sidebar">
+            <div class="profile-pic">
+                <img src="fahad.jpg" alt="Profile Picture">
+            </div>
+            <h1>Fahad Siddiqui</h1>
+            <p class="job-title">Full Stack Developer</p>
+            <p>Email: hafizf097@gmail.com</p>
+            <p>Phone: +92347-2467200</p>
+            <p>Location: Karachi, Pakistan</p>
+        </aside>
+
+        <!-- Main Content with Toggle Buttons -->
+        <main class="main-content">
+
+            <!-- Summary Section -->
+            <section class="section summary">
+                <div class="section-header">
+                    <h2>Summary</h2>
+                    <button onclick="toggleSection('summary-content')"> + </button>
+                </div>
+                <div class="section-content" id="summary-content">
+                    <p>
+                        Experienced full-stack developer with a strong background in developing scalable web
+                        applications and working across the full stack. Skilled in JavaScript, TypeScript, and modern
+                        front-end frameworks like React and backend development with Node.js.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="section experience">
+                <div class="section-header">
+                    <h2>Experience</h2>
+                    <button onclick="toggleSection('experience-content')">+</button>
+                </div>
+                <div class="section-content" id="experience-content">
+                    <div class="job">
+                        <h3>Software Engineer</h3>
+                        <span class="company">XYZ Corp</span> <span class="duration">Jan 2020 - Present</span>
+                        <ul>
+                            <li>Developed web applications with React, Node.js, and TypeScript.</li>
+                            <li>Collaborated with cross-functional teams to design scalable solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="section education">
+                <div class="section-header">
+                    <h2>Education</h2>
+                    <button onclick="toggleSection('education-content')">+</button>
+                </div>
+                <div class="section-content" id="education-content">
+                    <div class="education-entry">
+                        <h3>Masters In Islamic Education</h3>
+                        <span class="institution">Fedearal Urdu University, 2023</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="section skills">
+                <div class="section-header">
+                    <h2>Skills</h2>
+                    <button onclick="toggleSection('skills-content')">+</button>
+                </div>
+                <div class="section-content" id="skills-content">
+                    <ul class="skill-list">
+                        <li>Short Hand</li>
+                        <li>Stenography</li>
+                        <li>Microsift Office</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>HTML & CSS</li>
+                        </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
